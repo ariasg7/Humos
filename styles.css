@@ -881,7 +881,7 @@ body, html {
 
 .food-section {
   padding: 4rem 1rem;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #333;
   color: white;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
