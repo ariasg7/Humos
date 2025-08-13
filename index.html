@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Humos BBQ</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner container">
+    <div class="logo">
+      <img src="https://humosusa.com/wp-content/uploads/2023/07/Horizontal-1024x284.png" alt="Logo" />
+    </div>
+
+    <nav class="nav-desktop">
+      <button>HOME</button>
+      <button>SERVICES</button>
+      <button>REVIEWS</button>
+      <button>CONTACT US</button>
+    </nav>
+
+    <button class="nav-toggle burger" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" aria-hidden="true">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">REVIEWS</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="https://fastcdn.vidmingo.com/202307182047311594647beefSteakHDFootage.mp4" type="video/mp4" />
+    <!-- fallback img -->
+  </video>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <img
+      src="https://humosusa.com/wp-content/uploads/2023/07/Horizontal-1024x284.png"
+      alt="Humos Restaurant Logo"
+      class="hero-logo"
+    />
+    <p>
+      Slow-smoked perfection using traditional methods passed down through generations.
+      Come taste the difference that real BBQ makes.
+    </p>
+    <div class="hero-buttons">
+      <button onclick="scrollToSection('menu')" class="btn btn-primary">View Our Menu</button>
+      <button onclick="scrollToSection('contact')" class="btn btn-outline">Make Reservation</button>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <div class="container">
+    <h2>Our BBQ Menu</h2>
+    <p>Every dish is slow-smoked with premium hardwoods and seasoned with our secret spice blends</p>
+    <div class="menu-grid">
+      <!-- Menu items -->
+      <article class="menu-card popular">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=300&fit=crop&crop=center" alt="Brisket Platter" />
+        <span class="badge">Popular</span>
+        <h3>Brisket Platter</h3>
+        <p>12-hour smoked beef brisket with our signature dry rub, served with coleslaw and cornbread</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop&crop=center" alt="Pulled Pork Sandwich" />
+        <h3>Pulled Pork Sandwich</h3>
+        <p>Tender pulled pork shoulder with tangy BBQ sauce on a brioche bun</p>
+      </article>
+
+      <article class="menu-card popular">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop&crop=center" alt="Baby Back Ribs" />
+        <span class="badge">Popular</span>
+        <h3>Baby Back Ribs</h3>
+        <p>Fall-off-the-bone ribs glazed with our house BBQ sauce</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=300&fit=crop&crop=center" alt="Smoked Chicken" />
+        <h3>Smoked Chicken</h3>
+        <p>Half chicken smoked to perfection with herbs and spices</p>
+      </article>
+
+      <article class="menu-card popular">
+        <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&h=300&fit=crop&crop=center" alt="BBQ Burnt Ends" />
+        <span class="badge">Popular</span>
+        <h3>BBQ Burnt Ends</h3>
+        <p>Cubed brisket burnt ends with caramelized edges and smoky flavor</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&h=300&fit=crop&crop=center" alt="Smoked Sausage" />
+        <h3>Smoked Sausage</h3>
+        <p>House-made sausage links smoked with hickory wood</p>
+      </article>
+    </div>
+
+    <div class="menu-download">
+      <p>Want to see our full menu with sides and desserts?</p>
+      <button class="btn btn-primary">Download Full Menu</button>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="container about-grid">
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p>At HUMOS NY, we are passionate about fire and lovers of great food. We specialize in grills, sandwiches, and catering services for events in the vibrant city of New York.</p>
+      <p>With a fusion of Latin-American flavors, we offer a unique gastronomic experience that will delight your senses.</p>
+      <p>Our focus is on providing you with quality service, using the finest ingredients, and delivering personalized attention at every event.</p>
+      <p>Whether you’re looking to delight your guests with a delicious grill feast, organize a corporate event, or simply enjoy the best sandwiches in town, HUMOS NY is ready to exceed your expectations.</p>
+    </div>
+    <div class="about-images">
+      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=400&fit=crop&crop=center" alt="Smoky's BBQ restaurant exterior" class="main-about-image" />
+      <div class="about-small-images">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=200&fit=crop&crop=center" alt="BBQ smoker in action" />
+        <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=300&h=200&fit=crop&crop=center" alt="Pitmaster at work" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="food-section">
+  <div class="food-container">
+    <div class="food-item">
+      <img 
+        src="https://humosusa.com/wp-content/uploads/elementor/thumbs/image00024-q9lrlite3c3514ta79fp0kfdg06x9yoh5mp9zsg6ls.jpeg" 
+        alt="Sandwiches" 
+        loading="lazy"
+        class="food-image"
+      />
+      <h3>Sandwiches</h3>
+      <p>Indulge in the best sandwiches in NY. Our sandwiches are crafted with the finest ingredients, grilled to perfection, and served with homemade sauces. Each bite is a burst of flavors that will satisfy your cravings.</p>
+    </div>
+    <div class="food-item">
+      <img 
+        src="https://humosusa.com/wp-content/uploads/elementor/thumbs/image00195-scaled-q9lrp0rrj4vk8vqbrrvpaon51my3xekiay4cav9fg0.jpeg" 
+        alt="Catering" 
+        loading="lazy"
+        class="food-image"
+      />
+      <h3>Catering</h3>
+      <p>Elevate your event with our professional catering services. Whether it’s a corporate gathering, a celebration, or a food festival, our team will work closely with you to create a customized menu that suits your preferences and dietary requirements.</p>
+    </div>
+    <div class="food-item">
+      <img 
+        src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=400&fit=crop&crop=center" 
+        alt="Our Grills" 
+        loading="lazy"
+        class="food-image"
+      />
+      <h3>Our Grills</h3>
+      <p>At HUMOS NY, we take great pride in the assortment of grilling equipment we have carefully chosen to bring out the best flavors in our dishes. Each grill is meticulously selected to deliver unique and mouthwatering results.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="fire-gallery">
+  <h2 class="gallery-title">Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00199-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00210-300x225.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00013-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00181-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00191-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00193-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00027-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00015-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00035-200x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00192-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00224-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00019-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00011-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00021-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00209-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00023-300x200.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00202-225x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00008-200x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00031-200x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00024-200x300.jpeg" alt="">
+    <img src="https://humosusa.com/wp-content/uploads/2023/07/image00196-225x300.jpeg" alt="">
+    <!-- Add more images below if needed -->
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <h2 class="testimonial-heading">Testimonials</h2>
+
+  <div class="testimonial-cards-container">
+    <div class="testimonial-card">
+      <div class="header-row">
+        <img src="https://humosusa.com/wp-content/uploads/2023/07/Humos-BBQ-6.png" alt="John Reynolds" />
+        <div class="name-subtitle">
+          <h3>John Reynolds</h3>
+          <h4>Corporate Event Catering</h4>
+        </div>
+      </div>
+      <p>
+        HUMOS NY provided exceptional catering services for our corporate event. The grilled meats were tender and bursting with flavor, while the sandwiches offered a delicious variety. The team went above and beyond to fulfill our specific requests, demonstrating professionalism at every step. Our clients were thrilled, and we received numerous compliments on the delectable food. We highly recommend HUMOS NY for any corporate catering needs!
+      </p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="header-row">
+        <img src="https://humosusa.com/wp-content/uploads/2023/07/Humos-BBQ-9.png" alt="María Torres" />
+        <div class="name-subtitle">
+          <h3>María Torres</h3>
+          <h4>Sandwiches</h4>
+        </div>
+      </div>
+      <p>
+        I must say, HUMOS NY serves the best sandwiches in town! The combination of perfectly grilled meats, fresh ingredients, and homemade sauces creates an explosion of flavors with every bite. The portion sizes are generous, and the flavors are perfectly balanced. My personal favorite is the Cuban sandwich—it never fails to satisfy my cravings. HUMOS NY has become my go-to place for a fulfilling and scrumptious meal.
+      </p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="header-row">
+        <img src="https://humosusa.com/wp-content/uploads/2023/07/Humos-BBQ-8.png" alt="Michael Thompson" />
+        <div class="name-subtitle">
+          <h3>Michael Thompson</h3>
+          <h4>Grill Service</h4>
+        </div>
+      </div>
+      <p>
+        I recently hired HUMOS NY for a backyard barbecue, and I was thoroughly impressed with their grill service. The team arrived promptly, efficiently set up, and their expertise was evident in the incredible quality of the food. The grilled steaks were cooked to perfection—juicy, tender, and packed with flavor. The staff’s attention to detail and friendly demeanor enhanced the overall experience. Thank you, HUMOS NY, for making my event unforgettable!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="contact-title">Want to book an event with us</h2>
+
+    <div class="contact-grid">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+
+        <div class="form-group">
+          <label for="eventDate">Event Date</label>
+          <input id="eventDate" name="eventDate" type="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="details">Event Details</label>
+          <textarea id="details" name="details" rows="4" placeholder="Tell us more about your event"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Booking Request</button>
+      </form>
+
+      <div class="contact-image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+          alt="BBQ Event"
+          class="contact-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-grid">
+
+      <!-- Left Column -->
+      <div class="footer-left">
+        <img
+          src="https://humosusa.com/wp-content/uploads/2023/07/Horizontal-1024x284.png"
+          alt="Humos Restaurant Logo"
+          class="footer-logo"
+        />
+        <p class="footer-tagline">WE ARE HUMOS – We cook everything on the grill</p>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="footer-middle">
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">Services</a></li>
+          <li><a href="#" class="footer-link">Reviews</a></li>
+          <li><a href="#" class="footer-link">Contact Us</a></li>
+        </ul>
+
+        <div class="footer-whatsapp">
+          <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" fill="#25d366" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M20.52 3.48A11.88 11.88 0 0012 0C5.37 0 0 5.37 0 12a11.87 11.87 0 001.76 6.23L0 24l5.9-1.54a11.95 11.95 0 006.14 1.7c6.63 0 12-5.37 12-12 0-3.22-1.25-6.24-3.48-8.68zm-8.52 15.42a8.37 8.37 0 01-4.4-1.23l-.32-.2-3.46.9.92-3.37-.21-.35a8.39 8.39 0 1117.36-3.27 8.23 8.23 0 01-8.89 7.35zm4.78-6.6c-.07-.12-.25-.2-.52-.35s-1.2-.59-1.4-.66-.32-.12-.46.12-.53.66-.65.8-.24.18-.44.07a5.66 5.66 0 01-1.66-.98c-.31-.3-.58-.67-.58-.83s0-.29.18-.46a.78.78 0 01.56-.18c.19 0 .33-.07.47-.07s.21-.02.32.24a2.17 2.17 0 002.5 1.37c.33-.14.52-.63.58-.8s.06-.27 0-.36z"/>
+          </svg>
+          <span>Whatsapp +123 456 789</span>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="footer-right">
+        <a href="https://www.instagram.com/humosny" target="_blank" rel="noopener" aria-label="Instagram" class="social-link instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" class="social-link twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube" class="social-link youtube">
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <i class="far fa-copyright" aria-hidden="true"></i>
+      <span>Copyright 2023</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
